@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\medha\\source\\repos\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj": {}
+    "C:\\Users\\medha\\source\\repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj": {}
   },
   "projects": {
-    "C:\\Users\\medha\\source\\repos\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj": {
+    "C:\\Users\\medha\\source\\repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\medha\\source\\repos\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
+        "projectUniqueName": "C:\\Users\\medha\\source\\repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
         "projectName": "SmartEnrollmentFor911",
-        "projectPath": "C:\\Users\\medha\\source\\repos\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
+        "projectPath": "C:\\Users\\medha\\source\\repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
         "packagesPath": "C:\\Users\\medha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\medha\\source\\repos\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\obj\\",
+        "outputPath": "C:\\Users\\medha\\source\\repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\medha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

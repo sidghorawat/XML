@@ -18,7 +18,7 @@ namespace SmartEnrollmentFor911.Pages
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
-        } 
+        }
 
         public void OnGet()
         {
@@ -31,7 +31,26 @@ namespace SmartEnrollmentFor911.Pages
 
                 String smart911EnrollmentJSON = webClient.DownloadString("https://data.cincinnati-oh.gov/resource/rtu7-isj6.json");
                 var smart911Enrollments = Smart911Enrollment.FromJson(smart911EnrollmentJSON);
-                ViewData["MobileFoodSchedules"] = smart911Enrollments;
+                ViewData["Smart911Enrollments"] = smart911Enrollments;
+
+                IDictionary<long, QuickType.CrimeIncidents> incidentsMap = new Dictionary<long, CrimeIncidents>();
+                List<QuickType911Enrollment.Smart911Enrollment> enrollist = new List<Smart911Enrollment>();
+                foreach (QuickType.CrimeIncidents crInc in crimeIncidents)
+                {
+                    if (!incidentsMap.ContainsKey(crInc.Zip))
+                    {
+                        incidentsMap.Add(crInc.Zip, crInc);
+                    }
+                }
+
+                foreach (QuickType911Enrollment.Smart911Enrollment enroll in smart911Enrollments)
+                {
+                    if (incidentsMap.ContainsKey(enroll.ZipCode))
+                    {
+                        enrollist.Add(enroll);
+                    }
+                }
+                ViewData["Enrollist"] = enrollist;
             }
         }
     }

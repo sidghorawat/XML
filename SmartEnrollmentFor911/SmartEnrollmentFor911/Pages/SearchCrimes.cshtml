@@ -1,0 +1,68 @@
+﻿@page
+@model SmartEnrollmentFor911.Pages.SearchCrimesModel
+@{
+    ViewData["Title"] = "SearchCrimes";
+}
+
+<h1>Search Crimes</h1>
+
+<form action="" method="POST" style="margin-top: 50px;">
+    <div class="form-group">
+        <label style="font-size:20px;" class="control-label" for="zipSearch"><strong>Enter Zipcode</strong></label>
+        <input type="text" class="form-control" name="zipSearch" id="zipSearch" style="width:50%" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Search Crimes" class="btn btn-primary" />
+    </div>
+</form>
+
+@if (Model.searchFinished == true)
+{
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Offense</th>
+                <th>Number of Victims</th>
+                <th>Number of Suspects</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var crime in Model.crimesFiltered)
+            {
+                <tr>
+                    <td>@crime.DateReported</td>
+                    <td>@crime.Location</td>
+                    <td>@crime.Offense</td>
+                    <td>@crime.Totalnumbervictims</td>
+                    <td>@crime.Totalsuspects</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Zip</th>
+                <th>Date</th>
+                <th>Total</th>
+                <th>App</th>
+                <th>Web</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var enroll in Model.enrollmentsFiltered)
+            {
+                <tr>
+                    <td>@enroll.ZipCode</td>
+                    <td>@enroll.WeekOf</td>
+                    <td>@enroll.TotalEnrollments</td>
+                    <td>@enroll.AppEnrollments</td>
+                    <td>@enroll.WebEnrollments</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

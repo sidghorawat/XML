@@ -2,6 +2,8 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var enrollist = (List<QuickType911Enrollment.Smart911Enrollment>)ViewData["Enrollist"];
+    QuickType911Enrollment.Smart911Enrollment[] smart911Enrollments = (QuickType911Enrollment.Smart911Enrollment[])ViewData["Smart911Enrollments"];
 }
 
 <div class="text-center">
@@ -9,5 +11,27 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-Hello World!!!
-Hello Again
+<p>Smart911 Enrollments details in the areas where crimes are reported.</p>
+
+<table class="table table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Zip</th>
+            <th>Web Enrollments</th>
+            <th>App Enrollments</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (QuickType911Enrollment.Smart911Enrollment enroll in enrollist)
+        {
+            <tr>
+                <td>@enroll.ZipCode</td>
+                <td>@enroll.WebEnrollments</td>
+                <td>@enroll.AppEnrollments</td>
+                <td>@enroll.TotalEnrollments</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

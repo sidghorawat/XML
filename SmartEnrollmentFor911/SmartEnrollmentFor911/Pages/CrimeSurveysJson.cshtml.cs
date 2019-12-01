@@ -22,7 +22,7 @@ namespace SmartEnrollmentFor911.Pages
         public JsonResult OnGet()
         {
             string line;
-            string path = Path.Combine(_environment.ContentRootPath, "CrimeSurveys.txt");
+            string path = Path.Combine(_environment.ContentRootPath, "CrimeSurveysFile.txt");
             StreamReader file = new System.IO.StreamReader(path);
             while ((line = file.ReadLine()) != null)
             {

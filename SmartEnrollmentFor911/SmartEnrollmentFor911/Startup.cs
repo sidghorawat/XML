@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using SmartEnrollmentFor911.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace SmartEnrollmentFor911
 {
@@ -26,6 +27,19 @@ namespace SmartEnrollmentFor911
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
+            services.AddMvc();
+
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
+            //MvcOptions.EnableEndpointRouting = false;
 
             services.AddDbContext<SmartEnrollmentFor911Context>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SmartEnrollmentFor911Context")));
@@ -47,14 +61,18 @@ namespace SmartEnrollmentFor911
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            //app.UseMvc();
+            
             app.UseRouting();
-
+            
             app.UseAuthorization();
+
+            app.UseCors("MyPolicy");
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }

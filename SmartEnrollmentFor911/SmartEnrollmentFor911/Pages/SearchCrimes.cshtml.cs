@@ -5,8 +5,8 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using QuickType;
-using QuickType911Enrollment;
+using CrimeIncident;
+using SmartEnrollment;
 
 namespace SmartEnrollmentFor911.Pages
 {
@@ -15,10 +15,10 @@ namespace SmartEnrollmentFor911.Pages
         public bool searchFinished { get; set; }
         [BindProperty]
         public long zipSearch { get; set; }
-        public QuickType.CrimeIncidents[] crimes;
-        public QuickType911Enrollment.Smart911Enrollment[] enrollments;
-        public QuickType.CrimeIncidents[] crimesFiltered;
-        public QuickType911Enrollment.Smart911Enrollment[] enrollmentsFiltered;
+        public CrimeIncident.CrimeIncidents[] crimes;
+        public SmartEnrollment.Smart911Enrollment[] enrollments;
+        public CrimeIncident.CrimeIncidents[] crimesFiltered;
+        public SmartEnrollment.Smart911Enrollment[] enrollmentsFiltered;
         public void OnGet()
         {
 

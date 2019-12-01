@@ -33,7 +33,7 @@ namespace SmartEnrollmentFor911.Pages.CrimeSurveys
                 return Page();
             }
 
-            string crimeSurvey = CrimeSurvey.FirstName + "," + CrimeSurvey.LastName + "," + CrimeSurvey.isSafe + "," + CrimeSurvey.ShiftCity;
+            string crimeSurvey = CrimeSurvey.FirstName + "," + CrimeSurvey.LastName + "," + CrimeSurvey.CityYouLive + "," + CrimeSurvey.isSafe + "," + CrimeSurvey.ShiftCity;
             string path = Path.Combine(_environment.ContentRootPath, "CrimeSurveys.txt");
             System.IO.File.AppendAllText(path, crimeSurvey + Environment.NewLine);
             return RedirectToPage("./Index");

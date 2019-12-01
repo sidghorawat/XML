@@ -24,7 +24,7 @@ namespace SmartEnrollmentFor911.Pages.CrimeSurveys
         public async Task OnGetAsync()
         {
             string line;
-            string path = Path.Combine(_environment.ContentRootPath, "CrimeSurveys.txt");
+            string path = Path.Combine(_environment.ContentRootPath, "CrimeSurveysStoreFile.txt");
             StreamReader file = new System.IO.StreamReader(path);
             while ((line = file.ReadLine()) != null)
             {

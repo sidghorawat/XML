@@ -125,3 +125,7 @@ C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\Smar
 C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Debug\netcoreapp3.0\SmartEnrollmentFor911.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Debug\netcoreapp3.0\Razor\Pages\SearchCrimes.cshtml.g.cs
+C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Debug\netcoreapp3.0\Razor\Pages\CrimeSurveys\Create.cshtml.g.cs
+C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Debug\netcoreapp3.0\Razor\Pages\CrimeSurveys\Index.cshtml.g.cs
+C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Debug\netcoreapp3.0\Razor\Pages\SmartEnrollments.cshtml.g.cs
+C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Debug\netcoreapp3.0\Razor\Pages\CrimeSurveysJson.cshtml.g.cs

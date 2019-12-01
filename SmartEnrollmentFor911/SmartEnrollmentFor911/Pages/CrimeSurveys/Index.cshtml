@@ -1,0 +1,54 @@
+﻿@page
+@model SmartEnrollmentFor911.Pages.CrimeSurveys.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CrimeSurveys[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrimeSurveys[0].LastName)
+            </th> 
+            <th>
+                @Html.DisplayNameFor(model => model.CrimeSurveys[0].CityYouLive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrimeSurveys[0].isSafe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrimeSurveys[0].ShiftCity)
+            </th>            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.CrimeSurveys) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CityYouLive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isSafe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShiftCity)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

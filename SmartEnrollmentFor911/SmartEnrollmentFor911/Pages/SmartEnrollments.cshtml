@@ -1,0 +1,38 @@
+﻿@page
+@model SmartEnrollmentFor911.Pages.SmartEnrollmentsModel
+@{
+    ViewData["Title"] = "SmartEnrollments";
+    var enrollist = (List<SmartEnrollment.Smart911Enrollment>)ViewData["Enrollist"];
+    SmartEnrollment.Smart911Enrollment[] smart911Enrollments = (SmartEnrollment.Smart911Enrollment[])ViewData["Smart911Enrollments"];
+}
+
+<h1>SmartEnrollments</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<p>Smart911 Enrollments details in the areas where crimes are reported.</p>
+
+<table class="table table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Zip</th>
+            <th>Web Enrollments</th>
+            <th>App Enrollments</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (SmartEnrollment.Smart911Enrollment enroll in enrollist)
+        {
+            <tr>
+                <td>@enroll.ZipCode</td>
+                <td>@enroll.WebEnrollments</td>
+                <td>@enroll.AppEnrollments</td>
+                <td>@enroll.TotalEnrollments</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -2,36 +2,33 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    var enrollist = (List<QuickType911Enrollment.Smart911Enrollment>)ViewData["Enrollist"];
-    QuickType911Enrollment.Smart911Enrollment[] smart911Enrollments = (QuickType911Enrollment.Smart911Enrollment[])ViewData["Smart911Enrollments"];
+    var enrollist = (List<SmartEnrollment.Smart911Enrollment>)ViewData["Enrollist"];
+    SmartEnrollment.Smart911Enrollment[] smart911Enrollments = (SmartEnrollment.Smart911Enrollment[])ViewData["Smart911Enrollments"];
 }
 
+<style>
+
+    body {
+        background-color: #f2f2f2;
+    }
+</style>
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 style="text-align:center;font-family:Times New Roman;">San Francisco- Mobile Food Services</h1>
+    <img src="https://i.pinimg.com/474x/dc/33/45/dc3345c7d9c1db7ce0d2daef7b108c25.jpg" height="250" width="600" />
+    <br />
+</div>
+<br />
+<div>
+    <p>
+        In July 2018, the City of Cincinnati launched an emergency communication tool, Smart911, that provides 9-1-1 call takers and first responders with additional 
+        critical information about participating residents. This technology helps reduce response times and provide first responders with vital information that can help 
+        improve incident outcomes. Through Smart911, residents can create a secure “Safety Profile” that will automatically display to emergency call takers immediately upon
+        placing a 9-1-1 call. When a call comes in, a call taker will see a user’s Safety Profile as well as a Facility Profile about their current location.
+    </p>
 </div>
 
-<p>Smart911 Enrollments details in the areas where crimes are reported.</p>
-
-<table class="table table-striped table-hover">
-    <thead class="thead-dark">
-        <tr>
-            <th>Zip</th>
-            <th>Web Enrollments</th>
-            <th>App Enrollments</th>
-            <th>Total</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (QuickType911Enrollment.Smart911Enrollment enroll in enrollist)
-        {
-            <tr>
-                <td>@enroll.ZipCode</td>
-                <td>@enroll.WebEnrollments</td>
-                <td>@enroll.AppEnrollments</td>
-                <td>@enroll.TotalEnrollments</td>
-
-            </tr>
-        }
-    </tbody>
-</table>
+<div>
+    <p>Do you want to sign in for smart 911. Then click the below link.</p>
+    <a href="https://www.smart911.com/smart911/registration/registrationLanding.action">https://www.smart911.com/smart911/registration/registrationLanding.action</a>
+</div>

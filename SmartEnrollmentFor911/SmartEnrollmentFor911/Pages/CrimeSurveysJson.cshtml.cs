@@ -22,7 +22,7 @@ namespace SmartEnrollmentFor911.Pages
         public JsonResult OnGet()
         {
             string line;
-            string path = Path.Combine(_environment.ContentRootPath, "CrimeSurveysStoreFile.txt");
+            string path = Path.Combine(_environment.ContentRootPath, "CrimeSurveys.txt");
             StreamReader file = new System.IO.StreamReader(path);
             while ((line = file.ReadLine()) != null)
             {
@@ -30,8 +30,9 @@ namespace SmartEnrollmentFor911.Pages
                 CrimeSurvey crimeSurvey = new CrimeSurvey();
                 crimeSurvey.FirstName = data[0];
                 crimeSurvey.LastName = data[1];
-                crimeSurvey.isSafe = Boolean.Parse(data[2]);
-                crimeSurvey.ShiftCity = data[3];
+                crimeSurvey.CityYouLive = data[2];
+                crimeSurvey.isSafe = Boolean.Parse(data[3]);
+                crimeSurvey.ShiftCity = data[4];
                 CrimeSurveys.Add(crimeSurvey);
             }
             file.Close();

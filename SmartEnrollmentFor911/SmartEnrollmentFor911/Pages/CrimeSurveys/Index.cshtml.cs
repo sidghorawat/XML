@@ -32,8 +32,9 @@ namespace SmartEnrollmentFor911.Pages.CrimeSurveys
                 CrimeSurvey crimeSurvey = new CrimeSurvey();
                 crimeSurvey.FirstName = data[0];
                 crimeSurvey.LastName = data[1];
-                crimeSurvey.isSafe = Boolean.Parse(data[2]);
-                crimeSurvey.ShiftCity = data[3];
+                crimeSurvey.CityYouLive = data[2];
+                crimeSurvey.isSafe = Boolean.Parse(data[3]);
+                crimeSurvey.ShiftCity = data[4];
                 CrimeSurveys.Add(crimeSurvey);
             }
             file.Close();

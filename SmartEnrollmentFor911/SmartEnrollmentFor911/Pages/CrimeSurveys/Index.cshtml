@@ -5,11 +5,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<h1 class="font">Crime Survey Responses</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -18,7 +20,7 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CrimeSurveys[0].LastName)
-            </th> 
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.CrimeSurveys[0].CityYouLive)
             </th>
@@ -27,28 +29,29 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CrimeSurveys[0].ShiftCity)
-            </th>            
+            </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.CrimeSurveys) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CityYouLive)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.isSafe)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShiftCity)
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.CrimeSurveys)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CityYouLive)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.isSafe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShiftCity)
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

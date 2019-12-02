@@ -4,8 +4,15 @@
     ViewData["Title"] = "SearchCrimes";
 }
 
-<h1>Search Crimes</h1>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
 
+<div class="text-center">
+    <h1 class="font">Search Crimes with Zipcode</h1>
+</div>
 <form action="" method="POST" style="margin-top: 50px;">
     <div class="form-group">
         <label style="font-size:20px;" class="control-label" for="zipSearch"><strong>Enter Zipcode</strong></label>
@@ -16,12 +23,14 @@
     </div>
 </form>
 
+
+
 @if (Model.searchFinished == true)
 {
     <table class="table table-striped table-hover">
         <thead class="thead-dark">
             <tr>
-                <th>Date</th> 
+                <th>Date</th>
                 <th>Location</th>
                 <th>Offense</th>
                 <th>Number of Victims</th>

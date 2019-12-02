@@ -8132,11 +8132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sid's\\Source\\Repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
+      "projectUniqueName": "C:\\Users\\Sid's\\source\\repos\\IS7024-1\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
       "projectName": "SmartEnrollmentFor911",
-      "projectPath": "C:\\Users\\Sid's\\Source\\Repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
+      "projectPath": "C:\\Users\\Sid's\\source\\repos\\IS7024-1\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
       "packagesPath": "C:\\Users\\Sid's\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sid's\\Source\\Repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\obj\\",
+      "outputPath": "C:\\Users\\Sid's\\source\\repos\\IS7024-1\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

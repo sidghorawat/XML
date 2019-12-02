@@ -21,7 +21,7 @@ namespace SmartEnrollmentFor911.Pages.CrimeSurveys
 
         public IList<CrimeSurvey> CrimeSurveys = new List<CrimeSurvey>();
 
-        public async Task OnGetAsync()
+        public void OnGetAsync()
         {
             string line;
             string path = Path.Combine(_environment.ContentRootPath, "CrimeSurveysFile.txt");

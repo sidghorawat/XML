@@ -8126,19 +8126,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\medha\\.nuget\\packages\\": {}
+    "C:\\Users\\Sid's\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\medha\\source\\repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
+      "projectUniqueName": "C:\\Users\\Sid's\\Source\\Repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
       "projectName": "SmartEnrollmentFor911",
-      "projectPath": "C:\\Users\\medha\\source\\repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
-      "packagesPath": "C:\\Users\\medha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\medha\\source\\repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\obj\\",
+      "projectPath": "C:\\Users\\Sid's\\Source\\Repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\SmartEnrollmentFor911.csproj",
+      "packagesPath": "C:\\Users\\Sid's\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sid's\\Source\\Repos\\SmartWayToReduceCrimeRate\\SmartEnrollmentFor911\\SmartEnrollmentFor911\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\medha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sid's\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

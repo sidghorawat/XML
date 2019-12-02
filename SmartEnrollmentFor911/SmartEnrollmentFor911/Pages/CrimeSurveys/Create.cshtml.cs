@@ -26,7 +26,7 @@ namespace SmartEnrollmentFor911.Pages.CrimeSurveys
 
         [BindProperty]
         public CrimeSurvey CrimeSurvey { get; set; }
-        public async Task<IActionResult> OnPostAsync()
+        public IActionResult OnPostAsync()
         {
             if (!ModelState.IsValid)
             {

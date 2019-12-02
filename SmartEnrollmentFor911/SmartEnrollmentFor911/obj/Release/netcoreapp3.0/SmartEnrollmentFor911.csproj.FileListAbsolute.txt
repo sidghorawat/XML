@@ -164,3 +164,4 @@ C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\Smar
 C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Release\netcoreapp3.0\Razor\Pages\CrimeSurveys\Create.cshtml.g.cs
 C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Release\netcoreapp3.0\Razor\Pages\CrimeSurveys\Index.cshtml.g.cs
 C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Release\netcoreapp3.0\Razor\Pages\SmartEnrollments.cshtml.g.cs
+C:\Users\medha\source\repos\SmartWayToReduceCrimeRate\SmartEnrollmentFor911\SmartEnrollmentFor911\obj\Release\netcoreapp3.0\Razor\Pages\GroceryStoreBusinessOwners.cshtml.g.cs

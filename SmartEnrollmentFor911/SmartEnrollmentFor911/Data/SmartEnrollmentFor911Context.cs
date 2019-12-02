@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using SmartEnrollmentFor911.Models;
 
 namespace SmartEnrollmentFor911.Models
 {
@@ -14,5 +15,7 @@ namespace SmartEnrollmentFor911.Models
         }
 
         public DbSet<SmartEnrollmentFor911.Models.CrimeSurvey> CrimeSurvey { get; set; }
+
+        public DbSet<SmartEnrollmentFor911.Models.SmartEnrollmentAPI> SmartEnrollmentAPI { get; set; }
     }
 }
